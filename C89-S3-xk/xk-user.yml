@@ -11,6 +11,14 @@ spring:
       url: jdbc:mysql://127.0.0.1/C89-S2-xk?useSSL=false
       username: root
       password: a
+   mail:
+      # 邮箱服务器地址
+      host: smtp.qq.com
+      # 用户名
+      username: 2963465238@qq.com
+      # 密码 
+      password: rfjytyizqlmpdcie
+      default-encoding: UTF-8
 
 eureka:
    client:
@@ -25,3 +33,8 @@ feign:
 logging:
    level:
       com.yc.blog: debug
+      
+# 以谁来发送邮件（自定义的配置信息）
+mail:
+   from:
+      addr: 2963465238@qq.com
